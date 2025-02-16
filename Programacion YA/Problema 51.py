@@ -3,7 +3,8 @@ Solicitar por teclado la cantidad de empleados que tiene la empresa. Crear y car
 de dichos empleados. Imprimir la lista de sueldos ordenados de menor a mayor.
 """
 
-def ordenar_menor_mayor(sueldos, cantidad): # Funcion que ordena de menor a mayor los sueldos
+# Funcion que ordena de menor a mayor los sueldos
+def ordenar_menor_mayor(sueldos, cantidad):
     for x in range(cantidad - 1):
         for y in range(cantidad - x - 1):
             if sueldos[y] > sueldos [y+1]:
@@ -12,7 +13,9 @@ def ordenar_menor_mayor(sueldos, cantidad): # Funcion que ordena de menor a mayo
                 sueldos[y+1] = aux
     
     return sueldos # Retorna la lista ordenada
-    # return sorted(sueldos) Haciendo uso de la funcion sorted() podemos ordenar la lista de menor a mayor
+
+    # Haciendo uso de la funcion sorted() podemos ordenar la lista de menor a mayor
+    # return sorted(sueldos)
 
 #########################   Main    ################################
 

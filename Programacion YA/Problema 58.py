@@ -6,6 +6,7 @@ Mostrar los empleados con la cantidad de inasistencias.
 Finalmente mostrar el nombre o los nombres de empleados que faltaron menos días.
 """
 
+# Funcion que carga los empleados, los dias y la cantidad de dias que falto el empleado
 def cargar_inasistencias():
     empleados = []
     faltas = []
@@ -21,16 +22,19 @@ def cargar_inasistencias():
     
     return [empleados, faltas]
 
+# Funcion que imprime a los empleados y sus inasistencias
 def imprimir_inasistencias(empleados, faltas):
     for x in range(3):
         print(f"\nNombre del empleado: {empleados[x]}")
         print(f"Dias que falto: {faltas[x]}")
 
+# Funcion que imprime la cantidad total de inasistencias de cada empleado
 def imprimir_cantidad_inasistencias(empleados, faltas):
     for x in range(3):
         print(f"\nNombre del empleado: {empleados[x]}")
         print(f"Cantidad de inasistencias: {len(faltas[x])}")
 
+# Funcion que imprime al o los empleados con menos inasistencias
 def imprimir_empleado_menos_inasistencias(empleados, faltas):
     menor = len(faltas[0])
     empleados_menos = []

@@ -3,8 +3,9 @@ Crear una lista por asignación con la cantidad de elementos de tipo lista que u
 Luego imprimir el último elemento de la lista principal.
 """
 
+# Funcion que imprime el ultimo componente de la lista
 def imprimir_ultimo_elemento(lista):
-    return lista[-1]
+    return lista[-1] # Retorna el ultimo componente de la lista
 
 #########################   Main    ################################
 

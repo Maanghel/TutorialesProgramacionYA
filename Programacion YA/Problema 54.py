@@ -5,8 +5,9 @@ Imprimir la lista. Luego fijar con el valor cero todos los elementos mayores a 5
 Volver a imprimir la lista.
 """
 
+# Funcion que fija el valor en 0 de los elementos mayores a 50 contenidos en el primer componente de la lista
 def fijar_valor(lista):
-    for x in range(len(lista[0])):
+    for x in range(len(lista[0])): # El for se repetira segun tantos componentes tenga el componente 0 de la lista
         if lista[0][x] > 50:
             lista[0][x] = 0
     

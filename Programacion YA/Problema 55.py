@@ -5,6 +5,7 @@ Imprimir la lista. Luego fijar con el valor cero todos los elementos mayores a 1
 Volver a imprimir la lista.
 """
 
+# Funcion que fija el valor en 0 de los elementos mayores a 10 contenidos en la lista
 def fijar_valor(lista):
     for x in range(len(lista)):
         for y in range(len(lista[x])):

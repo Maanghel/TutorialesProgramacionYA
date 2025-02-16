@@ -5,10 +5,11 @@ los resultados. Por ultimo ordenar con respecto a la cantidad de habitantes
 (de mayor a menor) e imprimir nuevamente.
 """
 
+# Funcion que ordena alfabeticamente los paises
 def ordenar_alfabeticamente(paises, total_habitantes):
     for x in range(4):
         for y in range(4):
-            if paises[y] > paises[y+1]:
+            if paises[y] > paises[y+1]: # ordena las listas
                 aux1 = paises[y]
                 paises[y] = paises[y+1]
                 paises[y+1] = aux1
@@ -18,6 +19,7 @@ def ordenar_alfabeticamente(paises, total_habitantes):
     
     return [paises, total_habitantes]
 
+# Funcion que ordena la lista de mayor a menor cantidad de habitantes
 def ordenar_mayor_menor(paises, total_habitantes):
     for x in range(4):
         for y in range(4):
