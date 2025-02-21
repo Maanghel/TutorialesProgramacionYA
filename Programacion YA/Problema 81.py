@@ -9,6 +9,7 @@ Tener en cuenta que la estructura de datos si se carga por asignación debería 
 empleados = [["juan",(2000,3000,4233)] , ["ana",(3444,1000,5333)] ,  etc.   ]
 """
 
+# Funcion que carga el nombre y sueldo en los ultimos tres meses
 def carga():
     empleados = []
     for x in range(5):
@@ -21,10 +22,12 @@ def carga():
     
     return empleados
 
+# Funcion que imprime el sueldo total trimestral
 def imprimir_total_sueldo(empleados):
     for x in range(len(empleados)):
         print(f"\nEl empleado {empleados[x][0]} gano un total de: {empleados[x][1][0] + empleados[x][1][1] + empleados[x][1][2]}")
 
+# Funcion que imprime los empleados con un sueldo trimestral mayor a $10000
 def imprimir_mayor10000(empleados):
     print("\nEmpleados con ingresos superiores a $10000:")
     for x in range(len(empleados)):
