@@ -16,16 +16,15 @@ def adivinar(numero_aleatorio):
     intentos = 0
     while True:
         numero = int(input("¿Cual es el numero que se genero aleatoriamente? "))
+        intentos += 1
         
         if numero == numero_aleatorio:
             print("\nGano.")
             break
         elif numero > numero_aleatorio:
             print("\nEl numero aleatorio es menor.")
-            intentos += 1
         else:
             print("\nEl numero aleatorio es mayor.")
-            intentos += 1
     
     return intentos
 
