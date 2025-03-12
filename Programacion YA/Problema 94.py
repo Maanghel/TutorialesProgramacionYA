@@ -10,4 +10,4 @@ Solo importar la funcionalidad factorial del módulo math de la biblioteca está
 from math import factorial
 
 entero = int(input("Ingrese un entero: "))
-print(f"\nEl factorial de {entero} es: {factorial(entero)}")
+print(f"\nEl factorial de {entero} es: {factorial(entero)}") # Imprime el factorial de un entero por medio de la funcion factorial
