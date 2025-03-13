@@ -17,6 +17,8 @@ class Aplicacion:
         self.ventana1.mainloop()
         
     def generar_interfaz(self):
+        """ Genera la interfaz de la aplicacion dividida en dos secciones """
+        # Seccion 1: Configuracion de la contraseña
         frame_config = ttk.LabelFrame(self.ventana1, text= "Configuracion")
         frame_config.pack(padx= 10, pady= 10, fill= "x")
         ttk.Label(frame_config, text= "Longitud:").grid(column= 0, row= 0, padx= 5, pady= 5, sticky= "w")
@@ -31,6 +33,7 @@ class Aplicacion:
         ttk.Checkbutton(frame_config, text= "Incluir símbolos", variable= self.var_simbolos).grid(column= 0, row= 3, columnspan= 2, padx= 5, sticky= "w")
         ttk.Button(frame_config, text= "Generar", command= self.generar_contraseña).grid(column= 0, row= 4, columnspan= 2, pady= 10)
         
+        # Seccion 2: Resultado y opcion de copiado
         frame_resultado = ttk.Frame(self.ventana1)
         frame_resultado.pack(padx= 10, pady= 5, fill= "x")
         self.entry_contraseña = ttk.Entry(frame_resultado, width= 30, state= "readonly", font= ("Arial", 12))
@@ -38,6 +41,7 @@ class Aplicacion:
         ttk.Button(frame_resultado, text= "Copiar", command= self.copiar_al_portapapeles).pack(side= "right", padx= 5)
     
     def generar_contraseña(self):
+        """ Genera una contraseña aleatoria con las opciones seleccionadas """
         try:
             longitud = int(self.entry_longitud.get())
         except ValueError:
@@ -68,6 +72,7 @@ class Aplicacion:
         self.entry_contraseña.config(state= "readonly")
     
     def copiar_al_portapapeles(self):
+        """ Copia la contraseña al portapapeles """
         contraseña = self.entry_contraseña.get()
         if contraseña:
             pyperclip.copy(contraseña)
