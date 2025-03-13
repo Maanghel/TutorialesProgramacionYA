@@ -3,6 +3,7 @@ import string
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
+import pyperclip
 
 class Aplicacion:
     def __init__(self):
