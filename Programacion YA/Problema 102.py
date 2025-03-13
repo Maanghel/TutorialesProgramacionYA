@@ -15,11 +15,13 @@ class Jugador:
         self.puntuaje = puntuaje
     
     def imprimir(self):
+        # Funcion que imprime los datos del jugador
         print(f"\nJugador: {self.nombre}")
         print(f"Puntuaje: {self.puntuaje}")
         print(f"El juego finaliza en {Jugador.tiempo_juego} minutos.")
     
     def pasar_tiempo(self):
+        # Funcion que avanza el tiempo del jugador
         Jugador.tiempo_juego -= 1
 
 #########################   Main    ################################

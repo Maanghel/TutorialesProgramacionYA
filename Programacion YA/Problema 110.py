@@ -34,6 +34,7 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def cambiar_titulo(self):
+        # Funcion que cambia el titulo de la ventana
         if self.listbox1.curselection() != 0:
             self.ventana1.title(f"Nombre: {self.seleccion1.get()} - Pais: {self.listbox1.get(self.listbox1.curselection()[0])}")
 

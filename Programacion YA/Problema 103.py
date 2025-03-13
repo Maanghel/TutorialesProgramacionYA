@@ -10,7 +10,8 @@ class Jugador:
         self.puntaje = puntaje
     
     def __str__(self):
-        cadena = "\nJugador: " + self.nombre + "\n" + "Puntaje: " + str(self.puntaje)
+        # Funcion usando el metodo especial que se llama al usar print
+        cadena = f"\nJugador: {self.nombre}\nPuntaje: {str(self.puntaje)}"
         if self.puntaje < 1000:
             cadena += "\nTipo: Principiante"
         else:

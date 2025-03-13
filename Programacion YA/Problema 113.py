@@ -20,6 +20,7 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def articulo(self):
+        # Funcion que inserta los widgets en la labelframe "Articulo"
         self.label1 = ttk.Label(self.labelframe1, text = "Codigo de articulo:")
         self.label1.grid(column = 0, row = 0, padx = 4, pady = 4)
         self.entry1 = ttk.Entry(self.labelframe1)
@@ -34,6 +35,7 @@ class Aplicacion:
         self.entry3.grid(column = 1, row = 2, padx = 4, pady = 4)
     
     def operaciones(self):
+        # Funcion que inserta los widgets en la labelframe "Operaciones"
         self.button1 = ttk.Button(self.labelframe2, text = "Alta")
         self.button1.grid(column = 0, row = 0, padx = 4, pady = 4)
         self.button2 = ttk.Button(self.labelframe2, text = "Baja")

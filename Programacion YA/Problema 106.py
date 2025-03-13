@@ -31,6 +31,7 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def sumar(self):
+        # Funcion que suma dos valores
         suma = int(self.dato1.get()) + int(self.dato2.get())
         self.label3.configure(text = suma)
 

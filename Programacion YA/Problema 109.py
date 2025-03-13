@@ -27,6 +27,7 @@ class Aplicacion:
         self.ventana1.mainloop()
         
     def modificar_titulo(self):
+        # Funcion que modifica el titulo
         cadena = ""
         if self.seleccion1.get() == 1:
             cadena += "Google Chrome - "

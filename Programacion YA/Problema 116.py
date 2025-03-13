@@ -14,7 +14,7 @@ class Aplicacion:
         
         self.canvas1 = tk.Canvas(self.ventana1, width= 700, height= 500, background= "black" )
         self.canvas1.grid(column= 0, row= 0)
-        self.archivo1 = tk.PhotoImage(file= "Programacion YA\carta1.png")
+        self.archivo1 = tk.PhotoImage(file= "Programacion YA\carta1.png") # Carga una imagen en una variable
         self.archivo2 = tk.PhotoImage(file= "Programacion YA\carta2.png")
         self.archivo3 = tk.PhotoImage(file= "Programacion YA\carta3.png")
         
@@ -24,10 +24,11 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def mostrar_carta(self):
-        opcion = random.randint(1, 3)
+        # Funcion que muestra una carta aleatoria
+        opcion = random.randint(1, 3) # Genera un numero aleatorio del 1 al 3
         
         if opcion == 1:
-            self.canvas1.create_image(240, 100, image= self.archivo1, anchor= "nw")
+            self.canvas1.create_image(240, 100, image= self.archivo1, anchor= "nw") # Crea una imagen con la imagen guardada en el archivo correspondiente
         elif opcion == 2:
             self.canvas1.create_image(240, 100, image= self.archivo2, anchor= "nw")
         else:

@@ -12,6 +12,7 @@ class Cuenta:
         self.monto = monto
     
     def imprimir(self):
+        # Funcion que imprime los datos del titular
         print(f"Titular: {self.titular}")
         print(f"Monto: {self.monto}")
 
@@ -21,6 +22,7 @@ class CajaAhorro(Cuenta):
         super().__init__(titular, monto)
     
     def imprimir(self):
+        # Funcion que imprime los datos de la caja de ahorro del titular
         print("Cuenta de ahorro:")
         super().imprimir()
         print("No genera intereses.")
@@ -28,11 +30,12 @@ class CajaAhorro(Cuenta):
 # SubClase de la Superclase Cuenta
 class PlazoFijo(Cuenta):
     def __init__(self, titular, monto, plazo, interes):
-        super().__init__(titular, monto)
+        super().__init__(titular, monto) # con la funcion super se indica que se usara un metodo de la clase padre
         self.interes = interes
         self.plazo = plazo
     
     def imprimir(self):
+        # Funcion que imprime los datos del titular
         print("\nCuenta de plazo fijo")
         super().imprimir()
         print(f"Plazo en dias: {self.plazo}")
@@ -40,6 +43,7 @@ class PlazoFijo(Cuenta):
         self.ganancia_interes()
 
     def ganancia_interes(self):
+        # funcion que imprime el importe de los intereses
         ganancia = self.monto * self.interes / 100
         print(f"Importe del interes: {ganancia}")
 

@@ -15,6 +15,7 @@ class Administrador:
         self.emails = []
     
     def menu(self):
+        # Funcion que despliega un menu de opciones para administrar una agenda personal
         while True:
             print("\n1- Cargar un contacto en la agenda")
             print("2- Mostrar listado completo de la agenda")
@@ -36,6 +37,7 @@ class Administrador:
                 break
     
     def cargar(self):
+        # Funcion que solicita la carga de los datos al usuario
         nombre = input("\nIngrese el nombre del contacto: ")
         telefono = input("Ingrese el telefono: ")
         email = input("Ingrese el email: ")
@@ -44,6 +46,7 @@ class Administrador:
         self.emails.append(email)
     
     def listado(self):
+        # Funcion que imprime un listado de los contactos
         if len(self.nombres) == 0:
             print("\nNo hay contactos en la agenda.")
         else:
@@ -54,6 +57,7 @@ class Administrador:
                 print(f"Email: {self.emails[x]}")
     
     def consultar(self):
+        # Funcion con la cual se consulta un contacto especifico
         nom = input("\nIngrese el nombre del contacto: ")
         if nom in self.nombres:
             for nombre in self.nombres:
@@ -65,6 +69,7 @@ class Administrador:
             print("\nEl contacto no se encuentra.")
     
     def modificar(self):
+        # Funcion para modificar un contacto
         nom = input("\nIngrese el nombre del contacto a modificar: ")
         if nom in self.nombres:
             print("\n1- Modificar telefono")

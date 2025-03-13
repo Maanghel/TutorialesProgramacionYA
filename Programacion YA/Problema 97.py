@@ -9,9 +9,11 @@ class Cuadrado:
         self.lado = lado
     
     def perimetro(self):
+        # Funcion que imprime el perimetro de un cuadrado
         print(f"\nEl perimetro del cuadrado es de: {self.lado * 4}")
     
     def superficie(self):
+        # Funcion que imprime el perimetro de un cuadrado
         print(f"El area del cuadrado es de: {self.lado * self.lado}")
 
 #########################   Main    ################################

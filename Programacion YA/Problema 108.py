@@ -27,6 +27,7 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def cambiar_color(self):
+        # Funcion que cambia el color de la ventana
         if self.seleccion.get() == 1:
             self.ventana1.configure(bg = "red")
         elif self.seleccion.get() == 2:

@@ -11,12 +11,14 @@ class Triangulo:
         self.lado3 = int(input("Ingrese el tercer lado:"))
     
     def imprimir_mayor(self):
+        # Funcion que imprime el mayor de los lados de un triangulo
         if self.lado1 == self.lado2 and self.lado1 == self.lado3:
             print("\nEl triangulo tiene la misma longitud en todos su lados.")
         else:
             print(f"\nEl lado mayor del triangulo es de {max(self.lado1, self.lado2, self.lado3)}.")
     
     def verificar_equilatero(self):
+        # Funcion que verifica si el triangulo es equilatero o no
         if self.lado1 == self.lado2 and self.lado1 == self.lado3:
             print("Es un triangulo equilatero.")
         else:

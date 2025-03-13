@@ -12,12 +12,13 @@ class Aplicacion:
         self.ventana1 = tk.Tk()
         self.canvas1 = tk.Canvas(self.ventana1, width= 600, height= 400, background= "black")
         self.canvas1.grid(column= 0, row= 0)
-        self.cuadrado = self.canvas1.create_rectangle(150, 10, 200, 60, fill= "red")
-        self.ventana1.bind("<KeyPress>", self.presion_tecla)
+        self.cuadrado = self.canvas1.create_rectangle(150, 10, 200, 60, fill= "red") # Crea un rectangulo
+        self.ventana1.bind("<KeyPress>", self.presion_tecla) # Detecta el evento de presionar una tecla
         self.ventana1.mainloop()
     
     def presion_tecla(self, evento):
-        x1, y1, x2, y2 = self.canvas1.coords(self.cuadrado)
+        # Funcion que realiza que el cuadrado se mueva segun la key que se presione
+        x1, y1, x2, y2 = self.canvas1.coords(self.cuadrado) # Obtiene las cordenadas actual de la figura
         if evento.keysym == 'Right':
             if x2 + 10 <= 600:
                 self.canvas1.move(self.cuadrado, 10, 0)

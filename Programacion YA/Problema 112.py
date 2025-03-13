@@ -36,9 +36,11 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def cambiar_tamaño(self):
+        # Funcion que cambia el tamaño de la ventana
         self.ventana1.geometry(f"{self.seleccion1.get()}x{self.seleccion2.get()}")
     
     def salir(self):
+        # Funcion que termina con la aplicacion
         sys.exit()
 
 #########################   Main    ################################

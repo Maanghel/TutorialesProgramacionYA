@@ -15,22 +15,25 @@ class Aplicacion:
         self.canvas1.grid(column= 0, row= 0)
         self.crear_cuadrados()
         
-        self.canvas1.tag_bind("move", "<ButtonPress-1>", self.presion_boton)
+        self.canvas1.tag_bind("move", "<ButtonPress-1>", self.presion_boton) # Captura un evento solo para los objetos que tengan el tag indicado
         self.canvas1.tag_bind("move", "<Button1-Motion>", self.mover)
         self.cuadrado_seleccionado = None
         self.ventana1.mainloop()
     
     def crear_cuadrados(self):
+        # Funcion que crea 100 cuadrados en posiciones aleatorias
         for x in range(100):
             x1 = random.randint(1, 1080)
             y1 = random.randint(1, 800)
             self.canvas1.create_rectangle(x1, y1, x1 + 20, y1 + 20,  fill= "red", tag= "move")
     
     def presion_boton(self, event):
+        # Funcion que detecta si se presiono un cuadrado
         cuadrado = self.canvas1.find_withtag(tk.CURRENT)
-        self.cuadrado_seleccionado = (cuadrado, event.x, event.y)
+        self.cuadrado_seleccionado = (cuadrado, event.x, event.y) 
     
     def mover(self, event):
+        # Funcion que reubica el cuadrado
         x, y = event.x, event.y
         
         cuadrado, x1, y1 = self.cuadrado_seleccionado

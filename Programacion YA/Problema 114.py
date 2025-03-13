@@ -14,6 +14,7 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def entrada_datos(self):
+        # Funcion que inserta los widgets para la entrada de datos
         self.lf1 = ttk.LabelFrame(self.ventana1, text = "Partidos Politicos")
         self.lf1.grid(column = 0, row = 0, sticky = "w")
         self.label1 = ttk.Label(self.lf1, text = "Partido A:")
@@ -33,10 +34,11 @@ class Aplicacion:
         self.entry3.grid(column = 1, row = 2, padx = 5, pady = 5)
         self.button1 = ttk.Button(self.lf1, text = "Generar Grafico", command = self.generar_grafico)
         self.button1.grid(column = 0, row = 3, columnspan = 2, padx = 5, pady = 5, sticky = "we")
-        self.entry1.focus()
+        self.entry1.focus() # Coloca el cursor en el primer entry
     
     def generar_grafico(self):
-        self.canvas1.delete(tk.ALL)
+        # Funcion que genera los graficos
+        self.canvas1.delete(tk.ALL) # Borra todo los datos que esten en el canvas en ese momento
         valor1 = int(self.datos1.get())
         valor2 = int(self.datos2.get())
         valor3 = int(self.datos3.get())

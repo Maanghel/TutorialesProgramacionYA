@@ -32,22 +32,27 @@ class Aplicacion:
         self.ventana1.mainloop()
 
     def presion1(self):
+        # Funcion que agrega el numero que se presiona al label
         self.presionados = self.presionados + "1"
         self.label1.configure(text = self.presionados)
 
     def presion2(self):
+        # Funcion que agrega el numero que se presiona al label
         self.presionados = self.presionados + "2"
         self.label1.configure(text = self.presionados)
 
     def presion3(self):
+        # Funcion que agrega el numero que se presiona al label
         self.presionados = self.presionados + "3"
         self.label1.configure(text = self.presionados)
 
     def presion4(self):
+        # Funcion que agrega el numero que se presiona al label
         self.presionados = self.presionados + "4"
         self.label1.configure(text = self.presionados)
 
     def presion5(self):
+        # Funcion que agrega el numero que se presiona al label
         self.presionados = self.presionados + "5"
         self.label1.configure(text = self.presionados)
 

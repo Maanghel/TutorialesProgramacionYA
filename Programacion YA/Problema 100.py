@@ -12,9 +12,11 @@ class Socio:
         self.antiguedad = int(input("Ingrese su antiguedad: "))
     
     def imprimir(self):
+        # Funcion que imprime el nombre y la antiguedad de un socio
         print(f"\n{self.nombre} tiene una antiguedad de {self.antiguedad} años.")
     
     def retornar_antiguedad(self):
+        # Funcion que retorna la antiguedad de un socio
         return self.antiguedad
 
 class Club:
@@ -24,6 +26,7 @@ class Club:
         self.socio3 = Socio()
     
     def mayor_antiguedad(self):
+        # Funcion que verifica que socio tiene mayor antiguedad
         print("\nSocio con mayor antiguedad:")
         if self.socio1.retornar_antiguedad() > self.socio2.retornar_antiguedad() and self.socio1.retornar_antiguedad() > self.socio3.retornar_antiguedad():
             self.socio1.imprimir()

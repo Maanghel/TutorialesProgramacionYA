@@ -19,9 +19,11 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def presiono_varon(self):
+        # Funcion que cambia el titulo de la ventana
         self.ventana1.title("Varon")
     
     def presiono_mujer(self):
+        # Funcion que cambia el titulo de la ventana
         self.ventana1.title("Mujer")
 
 #########################   Main    ################################

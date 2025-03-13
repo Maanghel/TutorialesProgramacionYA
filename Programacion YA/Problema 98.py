@@ -9,15 +9,19 @@ class Operaciones:
         self.valor2 = int(input("Ingrese el segundo valor: "))
     
     def suma(self):
+        # Funcion que imprime la suma de dos valores
         print(f"La suma de {self.valor1} mas {self.valor2} es: {self.valor1 + self.valor2}")
     
     def resta(self):
+        # Funcion que imprime la resta de dos valores
         print(f"La resta de {self.valor1} menos {self.valor2} es: {self.valor1 - self.valor2}")
     
     def multiplicación(self):
+        # Funcion que imprime la multiplicacion de dos valores
         print(f"La multiplicacion de {self.valor1} por {self.valor2} es: {self.valor1 * self.valor2}")
     
     def división(self):
+        # Funcion que imprime la division de dos valores
         print(f"La division de {self.valor1} entre {self.valor2} es: {self.valor1 / self.valor2}")
 
 #########################   Main    ################################

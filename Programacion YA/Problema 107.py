@@ -34,6 +34,7 @@ class Aplicacion:
         self.ventana1.mainloop()
     
     def login(self):
+        # Funcion que verifica si el usuario y contraseña son correctos
         if self.datos1.get() == self.usuario and self.datos2.get() == self.clave:
             self.ventana1.title("Correcto")
         else:
