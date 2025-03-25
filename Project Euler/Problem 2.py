@@ -6,13 +6,15 @@ By considering the terms in the Fibonnaci sequence whose values do not exceed fo
 find the sum of the even-valued terms.
 """
 
-def fibonacci():
-    fibonacci_sequence = [1, 2]
-    while sum(fibonacci_sequence) < 4000000:
-        next_number = fibonacci_sequence[-1] + fibonacci_sequence[-2]
-        fibonacci_sequence.append(next_number)
+import numpy
+
+def fibonacci(number1= 1, number2= 2, sum_fibonacci = 0):
+    if number2 >= 4000000:
+        return sum_fibonacci
+    elif number2 % 2 == 0:
+        sum_fibonacci += number2
     
-    return sum(fibonacci_sequence)
+    return fibonacci(number1= number2, number2= number1 + number2, sum_fibonacci= sum_fibonacci)
 
 #########################   Main    ################################
 
