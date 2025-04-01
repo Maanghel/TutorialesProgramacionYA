@@ -6,8 +6,6 @@ By considering the terms in the Fibonnaci sequence whose values do not exceed fo
 find the sum of the even-valued terms.
 """
 
-import numpy
-
 def fibonacci(number1= 1, number2= 2, sum_fibonacci = 0):
     if number2 >= 4000000:
         return sum_fibonacci

@@ -6,14 +6,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
 def multiples():
-    sum_multiples = 0
-    for number in range(1, 1000):
-        if number % 3 == 0:
-            sum_multiples += number
-        elif number % 5 == 0:
-            sum_multiples += number
-    
-    return sum_multiples
+    return sum(number for number in range(1, 1000) if number % 3 == 0 or number % 5 == 0)
 
 #########################   Main    ################################
 
