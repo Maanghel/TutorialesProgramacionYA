@@ -1,10 +1,5 @@
 # Ignorar el entorno virtual
 .venv/
 
-# Ingnorar arvhicos de cache de Python
-__pycache__/
-*.pyc
-*.pyo
-
 # Ignorar configuraciones de IDE
 .vscode/
