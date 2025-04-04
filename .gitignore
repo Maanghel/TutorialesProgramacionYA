@@ -3,3 +3,6 @@
 
 # Ignorar configuraciones de IDE
 .vscode/
+
+# Ignorar Cache
+__pycache__
