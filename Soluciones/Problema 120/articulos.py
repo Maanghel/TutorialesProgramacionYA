@@ -17,7 +17,7 @@ class Articulos:
         cursor.execute(sql, datos)
         cone.commit()
         cone.close()
-    
+
     def consulta(self, datos):
         cone = self.abrir()
         cursor = cone.cursor()
@@ -25,7 +25,7 @@ class Articulos:
         cursor.execute(sql, datos)
         cone.close()
         return cursor.fetchall()
-    
+
     def recuperar_todos(self):
         cone = self.abrir()
         cursor = cone.cursor()
@@ -33,7 +33,7 @@ class Articulos:
         cursor.execute(sql)
         cone.close()
         return cursor.fetchall()
-    
+
     def baja(self, datos):
         cone = self.abrir()
         cursor = cone.cursor()
@@ -42,7 +42,7 @@ class Articulos:
         cone.commit()
         cone.close()
         return cursor.rowcount
-    
+
     def modificacion(self, datos):
         cone = self.abrir()
         cursor = cone.cursor()

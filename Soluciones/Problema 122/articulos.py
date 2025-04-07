@@ -3,7 +3,7 @@ import sqlite3
 class Articulos:
 
     def abrir(self):
-        conexion = sqlite3.connect("Soluciones/Problema 122.py/bd1.db")
+        conexion = sqlite3.connect("Soluciones/Problema 122/bd1.db")
         return conexion
 
 
@@ -24,7 +24,7 @@ class Articulos:
             return cursor.fetchall()
         finally:
             cone.close()
-            
+
     def recuperar_todos(self):
         try:
             cone = self.abrir()
@@ -34,7 +34,7 @@ class Articulos:
             return cursor.fetchall()
         finally:
             cone.close()
-    
+
     def baja(self, datos):
         try:
             cone = self.abrir()
@@ -45,7 +45,7 @@ class Articulos:
             return cursor.rowcount
         except:
             cone.close()
-    
+
     def modificacion(self, datos):
         try:
             cone = self.abrir()
