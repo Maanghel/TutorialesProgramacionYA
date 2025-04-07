@@ -3,7 +3,7 @@ import psycopg2
 class Articulos:
 
     def abrir(self):
-        conexion = psycopg2.connect(database= "bd1", user= "postgres", password= "QmWnEbRvTcYxUz")
+        conexion = psycopg2.connect(database= "bd1", user= "postgres", password= "")
         return conexion
 
     def alta(self, datos):
