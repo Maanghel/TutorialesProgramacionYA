@@ -28,7 +28,7 @@ La organización del repositorio es la siguiente:
 - **Soluciones/**: Contiene los scripts de Python correspondientes a cada ejercicio.
 - **README.md**: Este archivo de documentación.
 - **.gitignore**: Especifica los archivos y directorios que Git debe ignorar.
-- **LICENSE: Este archivo contiene la información de la licencia.
+- **LICENSE**: Este archivo contiene la información de la licencia.
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más información.
