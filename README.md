@@ -19,8 +19,8 @@ La organización del repositorio es la siguiente:
 
 * TutorialesProgramacionYA/
   * Soluciones/
-    * ejercicio1.py
-    * ejercicio2.py
+    * problema1.py
+    * problema2.py
     * ...
   * README.md
   * .gitignore
