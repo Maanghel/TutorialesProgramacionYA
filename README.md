@@ -4,10 +4,10 @@ Este repositorio contiene las soluciones desarrolladas para los ejercicios del c
 
 ## 📑 Tabla de Contenidos
 
-1. [🎯 Descripción](#descripción)
-2. [📁 Estructura del Proyecto](#estructura-del-proyecto)
+1. [🎯 Descripción](#-descripción)
+2. [📁 Estructura del Proyecto](#-estructura-del-proyecto)
 3. [🛠️ Tecnologías y Herramientas Usadas](#️-tecnologías-y-herramientas-usadas)
-4. [📜 Licencia](#licencia)
+4. [📜 Licencia](#-licencia)
 
 ## 🎯 Descripción
 
